@@ -206,7 +206,7 @@
     },
     "extra": {
         "branch-alias": {
-            "dev-master": "0.17-dev"
+            "dev-master": "payumcom-dev"
         },
         "incenteev-parameters": {
             "file": "app/config/parameters.yml"
