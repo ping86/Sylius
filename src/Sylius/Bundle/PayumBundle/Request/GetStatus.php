@@ -175,4 +175,21 @@ class GetStatus extends BaseGetStatus
     {
         $this->status = PaymentInterface::STATE_REFUNDED;
     }
+    
+    /**
+     * {@inheritdoc}
+     */
+    public function isPayedout()
+    {
+        return $this->status === PaymentInterface::STATE_PAYEDOUT;
+    }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function markPayedout()
+    {
+        $this->status = PaymentInterface::STATE_PAYEDOUT;
+    }
+
 }
